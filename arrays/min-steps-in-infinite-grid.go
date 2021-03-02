@@ -5,7 +5,7 @@ import (
 	"fmt"
 )
 
-
+// T(n) : O(n), S(n) : O(1)
 func coverPoints(A []int , B []int )  (int) {
     
     res := 0

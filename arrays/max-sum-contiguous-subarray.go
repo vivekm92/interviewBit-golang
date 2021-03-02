@@ -7,6 +7,7 @@ import (
 )
 
 
+// T(n) : O(n), S(n) : O(1)
 func maxSubArray(A []int ) (int) {
 
 
