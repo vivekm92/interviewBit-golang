@@ -1,11 +1,4 @@
-
-package main
-
-import (
-	"fmt"
-	"math"
-)
-
+import "math"
 
 // T(n) : O(n), S(n) : O(1)
 func maxSubArray(A []int ) (int) {
@@ -29,13 +22,4 @@ func maxSubArray(A []int ) (int) {
 	}
 
 	return int(res)
-}
-
-func main() {
-
-	A := []int{1, 2, 3, 4, -10}
-	fmt.Println(maxSubArray(A))
-
-	B := []int{-2, 1, -3, 4, -1, 2, 1, -5, 4}
-	fmt.Println(maxSubArray(B))
 }
