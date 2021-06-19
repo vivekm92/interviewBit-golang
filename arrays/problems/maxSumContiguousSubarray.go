@@ -3,7 +3,6 @@ import "math"
 // T(n) : O(n), S(n) : O(1)
 func maxSubArray(A []int ) (int) {
 
-
 	currSum := math.Inf(-1)
 	res := math.Inf(-1)
 
