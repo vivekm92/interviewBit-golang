@@ -1,8 +1,4 @@
-
-package main
-
 import "fmt"
-
 
 // T(n) : O (n), S(n) : O(n)
 func plusOne(A []int )  ([]int) {
@@ -38,18 +34,4 @@ func plusOne(A []int )  ([]int) {
     }
     
     return res
-}
-
-
-func main() {
-
-	arr := []int{0, 1, 2, 3}
-	fmt.Println(plusOne(arr))
-
-	brr := []int{9, 9, 9}
-	fmt.Println(plusOne(brr))
-
-
-	crr := []int{0, 0, 9, 9, 9}
-	fmt.Println(plusOne(crr))
 }
