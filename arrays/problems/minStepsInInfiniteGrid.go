@@ -1,10 +1,4 @@
-
-package main
-
-import (
-	"fmt"
-	"math"
-)
+import "math"
 
 // T(n) : O(n), S(n) : O(1)
 func coverPoints(A []int , B []int )  (int) {
@@ -18,14 +12,4 @@ func coverPoints(A []int , B []int )  (int) {
     }
     
     return res
-}
- 
-func main() {
-
-	A := []int{0, 1, 1}
-	B := []int{0, 1, 2}
-
-
-	fmt.Println(coverPoints(A, B))
-
 }
