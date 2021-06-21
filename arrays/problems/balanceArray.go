@@ -1,3 +1,5 @@
+
+// T(n) : O(n), S(n) : O(n)
 func solve(A []int )  (int) {
 
     n, even, odd := len(A), 0, 0
