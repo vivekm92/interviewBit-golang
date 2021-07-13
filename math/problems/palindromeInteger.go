@@ -3,7 +3,7 @@
 func isPalindrome(A int )  (int) {
 
     if A < 0 {
-        return 0;
+        return 0
     }
 
     n, curr := 0, A
