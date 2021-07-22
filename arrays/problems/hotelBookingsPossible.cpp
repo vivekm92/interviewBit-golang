@@ -1,4 +1,5 @@
 
+// T(n) : O(nlog(n)) : S(n) : O(n)
 bool Solution::hotel(vector<int> &arrive, vector<int> &depart, int K) {
     
     int n = arrive.size();
