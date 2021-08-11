@@ -1,7 +1,11 @@
-import "math"
+package arrays
+
+import (
+	"math"
+)
 
 // T(n) : O(n), S(n) : O(1)
-func maxSubArray(A []int ) (int) {
+func maxSubArray(A []int) int {
 
 	currSum := math.Inf(-1)
 	res := math.Inf(-1)
@@ -9,7 +13,7 @@ func maxSubArray(A []int ) (int) {
 	for i := 0; i < len(A); i++ {
 		currVal := float64(A[i])
 
-		if currSum + currVal < currVal {
+		if currSum+currVal < currVal {
 			currSum = currVal
 		} else {
 			currSum += currVal

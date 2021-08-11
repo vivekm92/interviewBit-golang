@@ -1,25 +1,26 @@
+package math
 
 // T(n) : O(log(n)), S(n) : O(1)
-func reverse(A int )  (int) {
+func reverse(A int) int {
 
-    rev := 0
-    const INT_MAX = (1 << 31) - 1
-    const INT_MIN = (-1 << 31)
+	rev := 0
+	const INT_MAX = (1 << 31) - 1
+	const INT_MIN = (-1 << 31)
 
-    for A != 0 {
-        val := A % 10
-        A /= 10
-        
-        if (rev > INT_MAX / 10) || (rev == INT_MAX / 10 && val > INT_MAX % 10) {
-            return 0
-        }
+	for A != 0 {
+		val := A % 10
+		A /= 10
 
-        if (rev < INT_MIN / 10) || (rev == INT_MIN / 10 && val < INT_MIN % 10) {
-            return 0
-        }
-        
-        rev = rev * 10 + val
-    }
+		if (rev > INT_MAX/10) || (rev == INT_MAX/10 && val > INT_MAX%10) {
+			return 0
+		}
 
-    return rev
+		if (rev < INT_MIN/10) || (rev == INT_MIN/10 && val < INT_MIN%10) {
+			return 0
+		}
+
+		rev = rev*10 + val
+	}
+
+	return rev
 }

@@ -1,3 +1,7 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
 
 // T(n) : O(nlog(n)) : S(n) : O(n)
 bool Solution::hotel(vector<int> &arrive, vector<int> &depart, int K) {

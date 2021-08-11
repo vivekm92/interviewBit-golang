@@ -1,3 +1,4 @@
+package arrays
 
 // T(n) : O(n), S(n) : O(n)
 func rotateArray(A []int, B int) []int {
