@@ -1,7 +1,7 @@
 package arrays
 
 // T(n) : O(n), S(n) : O(n)
-func solve(A int , B []int )  (int) {
+func countPartitions(A int , B []int )  (int) {
 
     n, sum := len(B), 0
     for i := 0; i < n; i++ {
