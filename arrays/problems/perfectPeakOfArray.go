@@ -1,23 +1,21 @@
 package arrays
 
-// T(n) : O(1), S(n) : O(1)
-func max(a, b int) int {
-	if a < b {
-		return b
-	}
-	return a
-}
-
-// T(n) : O(1), S(n) : O(1)
-func min(a, b int) int {
-	if a > b {
-		return b
-	}
-	return a
-}
-
 // T(n) : O(n), S(n) : O(n)
 func perfectPeak(A []int) int {
+
+	max := func(a, b int) int {
+		if a < b {
+			return b
+		}
+		return a
+	}
+
+	min := func(a, b int) int {
+		if a < b {
+			return a
+		}
+		return b
+	}
 
 	n := len(A)
 	suffixMin := make([]int, n, n)

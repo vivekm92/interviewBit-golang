@@ -3,7 +3,7 @@ package arrays
 import "math"
 
 // T(n) : O(n), S(n) : O(1)
-func solve(A []int, B int) int {
+func solvePickFromBothSides(A []int, B int) int {
 
 	res := 0
 	for i := 0; i < B; i++ {

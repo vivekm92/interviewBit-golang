@@ -1,15 +1,19 @@
 package arrays
 
-// T(n) : O(n), S(n) : O(1)
-func max(a, b int) int {
-	if a < b {
-		return b
-	}
-	return a
-}
+// // T(n) : O(n), S(n) : O(1)
+// func max(a, b int) int {
+
+// }
 
 // T(n) : O(n2), S(n) : O(1)
 func solveMaximumSumTriplet(A []int) int {
+
+	max := func(a, b int) int {
+		if a < b {
+			return b
+		}
+		return a
+	}
 
 	n, res := len(A), 0
 	for i := 1; i < n-1; i++ {

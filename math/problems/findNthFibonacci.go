@@ -31,7 +31,7 @@ func foo(arr []int, n int) []int {
 }
 
 // T(n) : O(log(n)), S(n) : O(1)
-func solve(A int) int {
+func solveFindNthFibonacci(A int) int {
 
 	if A == 1 || A == 2 {
 		return 1

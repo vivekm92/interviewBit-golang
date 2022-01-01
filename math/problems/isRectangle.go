@@ -1,7 +1,7 @@
 package math
 
 // T(n) : O(1), S(n) : O(1)
-func solve(A int, B int, C int, D int) int {
+func solveIsRectangle(A int, B int, C int, D int) int {
 
 	lookup := make(map[int]int)
 
