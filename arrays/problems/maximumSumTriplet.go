@@ -9,7 +9,7 @@ func max(a, b int) int {
 }
 
 // T(n) : O(n2), S(n) : O(1)
-func solve(A []int) int {
+func solveMaximumSumTriplet(A []int) int {
 
 	n, res := len(A), 0
 	for i := 1; i < n-1; i++ {
