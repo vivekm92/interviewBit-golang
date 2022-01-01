@@ -18,7 +18,7 @@ func perfectPeak(A []int) int {
 	}
 
 	n := len(A)
-	suffixMin := make([]int, n, n)
+	suffixMin := make([]int, n)
 
 	suffixMin[n-1] = A[n-1]
 	for i := n - 2; i >= 0; i-- {
