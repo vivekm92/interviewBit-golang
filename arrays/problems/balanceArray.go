@@ -1,7 +1,7 @@
 package arrays
 
 // T(n) : O(n), S(n) : O(n)
-func solve(A []int) int {
+func solveBalanceArray(A []int) int {
 
 	n, even, odd := len(A), 0, 0
 	rightEven, rightOdd := make([]int, n), make([]int, n)
