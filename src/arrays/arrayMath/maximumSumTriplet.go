@@ -1,9 +1,4 @@
-package arrays
-
-// // T(n) : O(n), S(n) : O(1)
-// func max(a, b int) int {
-
-// }
+package arrayMath
 
 // T(n) : O(n2), S(n) : O(1)
 func solveMaximumSumTriplet(A []int) int {

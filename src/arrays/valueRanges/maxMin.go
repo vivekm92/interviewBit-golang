@@ -1,4 +1,4 @@
-package arrays
+package valueRanges
 
 // T(n) : O(n), S(n) : O(1)
 func solveMaxMin(A []int) int {

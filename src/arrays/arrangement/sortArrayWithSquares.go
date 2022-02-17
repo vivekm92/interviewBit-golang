@@ -1,4 +1,4 @@
-package arrays
+package arrangement
 
 // T(n) : O(n), S(n) : O(n)
 func solve(A []int) []int {

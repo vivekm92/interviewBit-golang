@@ -1,4 +1,4 @@
-package arrays
+package arrayMath
 
 // T(n) : O(n), S(n) : O(1)
 func solveMinimumLightsToActivate(A []int, B int) int {

@@ -1,4 +1,4 @@
-package arrays
+package additionalPractice
 
 // T(n) : O(n), S(n) : O(n)
 func addArrays(A []int, B []int) []int {
