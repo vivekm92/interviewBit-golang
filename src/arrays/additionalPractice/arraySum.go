@@ -32,3 +32,7 @@ func addArrays(A []int, B []int) []int {
 
 	return arr
 }
+
+func SolveArraySum(A []int, B []int) []int {
+	return addArrays(A, B)
+}
