@@ -1,7 +1,7 @@
 package additionalPractice
 
 // T(n) : O(n), S(n) : O(1)
-func solve(A []int) []int {
+func Solve(A []int) []int {
 
 	iA, iB := 0, 0
 	for iB < len(A) {
