@@ -1,5 +1,24 @@
 package additionalPractice
 
+/*
+  Problem : https://www.interviewbit.com/problems/array-sum/
+
+  Solution :
+
+  1) Two Pointer Approach
+
+	- Keep pointers at the end of each array
+	- keep adding the values pointed at each array and decrease the pointer value.
+	- reverse the resultant array.
+
+  Follow up :
+
+  1) Try to do the above problem without using any additional space.
+
+
+
+*/
+
 // T(n) : O(n), S(n) : O(n)
 func addArrays(A []int, B []int) []int {
 
@@ -25,6 +44,7 @@ func addArrays(A []int, B []int) []int {
 		arr = append(arr, carry)
 	}
 
+	// reverse the resultant array.
 	n := len(arr)
 	for i := 0; i < int(n/2); i++ {
 		arr[i], arr[n-1-i] = arr[n-1-i], arr[i]
