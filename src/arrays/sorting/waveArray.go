@@ -5,7 +5,7 @@ import (
 )
 
 // T(n) : O(nlog(n)), S(n) : O(n)
-func wave(A []int) []int {
+func Wave(A []int) []int {
 
 	n := len(A)
 	sort.Slice(A, func(i, j int) bool {

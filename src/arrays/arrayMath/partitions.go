@@ -1,7 +1,7 @@
 package arrayMath
 
 // T(n) : O(n), S(n) : O(n)
-func countPartitions(A int, B []int) int {
+func CountPartitions(A int, B []int) int {
 
 	n, sum := len(B), 0
 	for i := 0; i < n; i++ {

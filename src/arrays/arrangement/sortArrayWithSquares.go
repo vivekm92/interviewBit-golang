@@ -1,7 +1,7 @@
 package arrangement
 
 // T(n) : O(n), S(n) : O(n)
-func solve(A []int) []int {
+func SortArrayWithSquares(A []int) []int {
 
 	res, n := make([]int, 0), len(A)
 	i, j := 0, n-1

@@ -1,7 +1,7 @@
 package bucketing
 
 // T(n) : O(n), S(n) : O(n)
-func solveBalanceArray(A []int) int {
+func BalanceArray(A []int) int {
 
 	n, even, odd := len(A), 0, 0
 	rightEven, rightOdd := make([]int, n), make([]int, n)

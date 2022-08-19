@@ -13,7 +13,7 @@ package additionalPractice
 */
 
 // T(n) : O(n); S(n) : O(1)
-func countGreaterOrLesser(A []int, B []int, C int) int {
+func CountGreaterOrLesser(A []int, B []int, C int) int {
 
 	nA, nB, cA, cB := len(A), len(B), 0, 0
 	for i := 0; i < nA; i++ {
@@ -32,8 +32,4 @@ func countGreaterOrLesser(A []int, B []int, C int) int {
 	}
 
 	return cB
-}
-
-func SolveCountGreaterOrLesser(A []int, B []int, C int) int {
-	return countGreaterOrLesser(A, B, C)
 }

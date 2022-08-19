@@ -1,7 +1,7 @@
 package additionalPractice
 
 // T(n) : O(n), S(n) : O(n)
-func makeEqualElements(A []int, B int) int {
+func MakeEqualElements(A []int, B int) int {
 
 	n, lookup := len(A), make(map[int]int, 0)
 	for _, i := range A {
@@ -16,8 +16,4 @@ func makeEqualElements(A []int, B int) int {
 		}
 	}
 	return 0
-}
-
-func SolveMakeEqualElements(A []int, B int) int {
-	return makeEqualElements(A, B)
 }

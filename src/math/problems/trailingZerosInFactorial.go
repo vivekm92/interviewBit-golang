@@ -1,7 +1,7 @@
-package math
+package mathProblems
 
 // T(n) : O(log(n)), S(n) : O(1)
-func trailingZeroes(A int) int {
+func TrailingZeroes(A int) int {
 
 	numZeros := 0
 	for A > 0 {

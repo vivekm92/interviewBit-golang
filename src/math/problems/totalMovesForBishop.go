@@ -1,4 +1,4 @@
-package math
+package mathProblems
 
 func min(a, b int) int {
 	if a < b {
@@ -8,7 +8,7 @@ func min(a, b int) int {
 }
 
 // T(n) : O(1), S(n) : O(1)
-func solveTotalMovesForBishop(A int, B int) int {
+func TotalMovesForBishop(A int, B int) int {
 
 	ud, dd, ld, rd := A-1, 8-A, B-1, 8-B
 	return min(ud, rd) + min(ud, ld) + min(dd, ld) + min(dd, rd)

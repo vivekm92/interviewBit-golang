@@ -1,7 +1,7 @@
-package math
+package mathProblems
 
 // T(n) : O(n), S(n) : O(1)
-func titleToNumber(A string) int {
+func TitleToNumber(A string) int {
 
 	n, res, pow := len(A), 0, 1
 	for i := n - 1; i >= 0; i-- {

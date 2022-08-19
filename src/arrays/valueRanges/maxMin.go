@@ -1,7 +1,7 @@
 package valueRanges
 
 // T(n) : O(n), S(n) : O(1)
-func solveMaxMin(A []int) int {
+func MaxMin(A []int) int {
 
 	n := len(A)
 	maxElement, minElement := A[0], A[0]

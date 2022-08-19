@@ -1,15 +1,15 @@
-package math
+package mathProblems
 
 // T(n) : O(log(n)), S(n) : O(1)
-func gcd(A int, B int) int {
+func Gcd(A int, B int) int {
 
 	if A < B {
-		return gcd(B, A)
+		return Gcd(B, A)
 	}
 
 	if B == 0 {
 		return A
 	}
 
-	return gcd(B, A%B)
+	return Gcd(B, A%B)
 }

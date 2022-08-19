@@ -1,5 +1,5 @@
 // refer : https://medium.com/codebrace/starred-problem-2-nth-fibonacci-number-in-log-n-time-821ea9a18296
-package math
+package mathProblems
 
 func bar(arr1 []int, arr2 []int) []int {
 
@@ -31,7 +31,7 @@ func foo(arr []int, n int) []int {
 }
 
 // T(n) : O(log(n)), S(n) : O(1)
-func solveFindNthFibonacci(A int) int {
+func FindNthFibonacci(A int) int {
 
 	if A == 1 || A == 2 {
 		return 1

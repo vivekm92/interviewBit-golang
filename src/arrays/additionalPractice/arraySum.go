@@ -25,7 +25,7 @@ package additionalPractice
 */
 
 // T(n) : O(n), S(n) : O(n)
-func addArrays(A []int, B []int) []int {
+func AddArrays(A []int, B []int) []int {
 
 	arr := make([]int, 0)
 	iA, iB, carry := len(A)-1, len(B)-1, 0
@@ -59,7 +59,7 @@ func addArrays(A []int, B []int) []int {
 }
 
 // T(n) : O(n), S(n) : O(1)
-func addArraysFollowUp(A []int, B []int) []int {
+func AddArraysFollowUp(A []int, B []int) []int {
 
 	nA, nB := len(A)-1, len(B)-1
 	res, iC := A, nA
@@ -95,7 +95,7 @@ func addArraysFollowUp(A []int, B []int) []int {
 }
 
 // T(n) : O(n), S(n) : O(1)
-func addArraysFollowUp1(A []int, B []int) []int {
+func AddArraysFollowUp1(A []int, B []int) []int {
 
 	nA, nB := len(A)-1, len(B)-1
 	res, iC := A, nA
@@ -133,16 +133,4 @@ func addArraysFollowUp1(A []int, B []int) []int {
 	}
 
 	return res
-}
-
-func SolveArraySum(A []int, B []int) []int {
-	return addArrays(A, B)
-}
-
-func SolveArraySumFollowUp(A []int, B []int) []int {
-	return addArraysFollowUp(A, B)
-}
-
-func SolveArraySumFollowUp1(A []int, B []int) []int {
-	return addArraysFollowUp1(A, B)
 }

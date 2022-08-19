@@ -6,7 +6,7 @@ import (
 )
 
 // T(n) : O(n), S(n) : O(1), where n is length of string
-func isDigitLogs(s string) bool {
+func IsDigitLogs(s string) bool {
 
 	idx := strings.Index(s, "-")
 	for i := idx; i < len(s); i++ {
@@ -19,11 +19,11 @@ func isDigitLogs(s string) bool {
 }
 
 // T(n) : O(nlogn), S(n) : O(n)
-func reorderLogs(A []string) []string {
+func ReorderLogs(A []string) []string {
 
 	nA, B := len(A), make([]string, 0)
 	for i := 0; i < nA; i++ {
-		if !isDigitLogs(A[i]) {
+		if !IsDigitLogs(A[i]) {
 			B = append(B, A[i])
 		}
 	}
@@ -48,14 +48,10 @@ func reorderLogs(A []string) []string {
 	}
 
 	for i := 0; i < nA; i++ {
-		if isDigitLogs(A[i]) {
+		if IsDigitLogs(A[i]) {
 			result = append(result, A[i])
 		}
 	}
 
 	return result
-}
-
-func SolveReorderDataInLogFiles(A []string) []string {
-	return reorderLogs(A)
 }

@@ -1,7 +1,7 @@
-package math
+package mathProblems
 
 // T(n) : O(log(n)), S(n) : O(1)
-func reverse(A int) int {
+func Reverse(A int) int {
 
 	rev := 0
 	const INT_MAX = (1 << 31) - 1

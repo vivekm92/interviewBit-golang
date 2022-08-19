@@ -1,7 +1,7 @@
 package arrayMath
 
 // T(n): O(n), S(n) : O(1)
-func maxArr(A []int) int {
+func MaxArr(A []int) int {
 
 	n, max1, min1, max2, min2 := len(A), -1<<63, 1<<63-1, -1<<63, 1<<63-1
 

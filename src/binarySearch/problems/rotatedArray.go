@@ -1,7 +1,7 @@
 package bsearch
 
 // T(n) : O(log(n)), S(n) : O(1)
-func findMin(A []int) int {
+func FindMin(A []int) int {
 
 	n := len(A)
 	l, r := 0, n-1

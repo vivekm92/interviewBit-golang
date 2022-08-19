@@ -6,7 +6,7 @@ import (
 )
 
 // T(n): O(nlogn), S(n) : O(n)
-func largestNumber(A []int) string {
+func LargestNumber(A []int) string {
 
 	sort.Slice(A, func(i, j int) bool {
 		s1, s2 := strconv.Itoa(A[i]), strconv.Itoa(A[j])

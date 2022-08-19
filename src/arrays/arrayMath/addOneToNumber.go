@@ -1,7 +1,7 @@
 package arrayMath
 
 // T(n) : O (n), S(n) : O(n)
-func plusOne(A []int) []int {
+func PlusOne(A []int) []int {
 
 	carry := 1
 	for i := len(A) - 1; i >= 0; i-- {

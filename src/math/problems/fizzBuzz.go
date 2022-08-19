@@ -1,9 +1,9 @@
-package math
+package mathProblems
 
 import "strconv"
 
 // T(n) : O(n), S(n) : O(n)
-func fizzBuzz(A int) []string {
+func FizzBuzz(A int) []string {
 
 	res := make([]string, 0)
 	for i := 1; i <= A; i++ {

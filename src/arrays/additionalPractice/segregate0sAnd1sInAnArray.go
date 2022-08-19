@@ -1,7 +1,7 @@
 package additionalPractice
 
 // T(n) : O(n), S(n) : O(1)
-func segregate(A []int) []int {
+func Segregate(A []int) []int {
 
 	pt := 0
 	for i := range A {
@@ -12,8 +12,4 @@ func segregate(A []int) []int {
 		}
 	}
 	return A
-}
-
-func SolveSegregate(A []int) []int {
-	return segregate(A)
 }

@@ -1,7 +1,7 @@
-package math
+package mathProblems
 
 // T(n) : O(log(n)), S(n) : O(1)
-func isPalindrome(A int) int {
+func IsPalindrome(A int) int {
 
 	if A < 0 {
 		return 0

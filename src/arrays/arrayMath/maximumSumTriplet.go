@@ -1,7 +1,7 @@
 package arrayMath
 
 // T(n) : O(n2), S(n) : O(1)
-func solveMaximumSumTriplet(A []int) int {
+func MaximumSumTriplet(A []int) int {
 
 	max := func(a, b int) int {
 		if a < b {

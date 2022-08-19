@@ -1,7 +1,7 @@
 package simulationArray
 
 // T(n) : O(n), S(n) : O(n)
-func perfectPeak(A []int) int {
+func PerfectPeak(A []int) int {
 
 	max := func(a, b int) int {
 		if a < b {

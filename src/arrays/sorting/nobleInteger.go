@@ -3,7 +3,7 @@ package sorting
 import "sort"
 
 // T(n) : O(nlog(n)) , S(n) : O(1)
-func solveNobleIntegers(A []int) int {
+func NobleIntegers(A []int) int {
 
 	sort.Slice(A, func(i, j int) bool {
 		return A[i] <= A[j]

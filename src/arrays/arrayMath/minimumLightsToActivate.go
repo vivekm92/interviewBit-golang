@@ -1,7 +1,7 @@
 package arrayMath
 
 // T(n) : O(n), S(n) : O(1)
-func solveMinimumLightsToActivate(A []int, B int) int {
+func MinimumLightsToActivate(A []int, B int) int {
 
 	n, curr, res := len(A), 0, 0
 	for curr < n {

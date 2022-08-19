@@ -3,7 +3,7 @@ package arrayMath
 import "math"
 
 // T(n) : O(n), S(n) : O(1)
-func coverPoints(A []int, B []int) int {
+func CoverPoints(A []int, B []int) int {
 
 	res := 0
 	for i := 1; i < len(A); i++ {
