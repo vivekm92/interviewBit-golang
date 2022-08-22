@@ -1,6 +1,8 @@
 package additionalPractice
 
-import "math"
+import (
+	"interviewBit/src/utils"
+)
 
 func GreaterThanPreviousAll(A []int) int {
 
@@ -9,7 +11,7 @@ func GreaterThanPreviousAll(A []int) int {
 		if v > m {
 			count++
 		}
-		m = int(math.Max(float64(m), float64(v)))
+		m = utils.MaxOfInts(m, v)
 	}
 
 	return count + 1

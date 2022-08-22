@@ -1,5 +1,7 @@
 package additionalPractice
 
+import "interviewBit/src/utils"
+
 /*
   Problem : https://www.interviewbit.com/problems/greater-of-lesser/
 
@@ -27,9 +29,5 @@ func CountGreaterOrLesser(A []int, B []int, C int) int {
 		}
 	}
 
-	if cA > cB {
-		return cA
-	}
-
-	return cB
+	return utils.MaxOfInts(cA, cB)
 }
