@@ -11,7 +11,7 @@ func GreaterThanPreviousAll(A []int) int {
 		if v > m {
 			count++
 		}
-		m = utils.MaxOfInts(m, v)
+		m = utils.MaxOfIntsOrFloats(m, v)
 	}
 
 	return count + 1

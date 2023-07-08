@@ -1,6 +1,10 @@
 package utils
 
-func MaxOfInts(v ...int) int {
+type Number interface {
+	int | int64 | float64
+}
+
+func MaxOfIntsOrFloats[V Number](v ...V) V {
 	x := v[0]
 	for _, y := range v {
 		if y > x {
@@ -10,7 +14,7 @@ func MaxOfInts(v ...int) int {
 	return x
 }
 
-func MinOfInts(v ...int) int {
+func MinOfIntsOrFloat[V Number](v ...V) V {
 	x := v[0]
 	for _, y := range v {
 		if y < x {

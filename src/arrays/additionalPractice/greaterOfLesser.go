@@ -29,5 +29,5 @@ func CountGreaterOrLesser(A []int, B []int, C int) int {
 		}
 	}
 
-	return utils.MaxOfInts(cA, cB)
+	return utils.MaxOfIntsOrFloats(cA, cB)
 }
