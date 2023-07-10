@@ -2,6 +2,16 @@ package arrayMath
 
 import "math"
 
+/*
+  Problem : https://www.interviewbit.com/problems/pick-from-both-sides/
+  Similar Problem : https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/
+
+  Solution :
+    - sum first k elements of array
+	- find max sum that can be achieved by removing 1 element and adding 1 element from each ends.
+
+*/
+
 // T(n) : O(n), S(n) : O(1)
 func PickFromBothSides(A []int, B int) int {
 
