@@ -25,8 +25,7 @@ func HighestScore(A [][]string) int {
 
 	var maxAverage int
 	for _, v := range lookup {
-		var average float64
-		average = float64(v.score) / float64(v.count)
+		average := float64(v.score) / float64(v.count)
 		if maxAverage < int(average) {
 			maxAverage = int(average)
 		}
