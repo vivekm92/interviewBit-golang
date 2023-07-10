@@ -1,6 +1,10 @@
 // refer : https://medium.com/codebrace/starred-problem-2-nth-fibonacci-number-in-log-n-time-821ea9a18296
 package mathProblems
 
+import (
+	"testing"
+)
+
 func bar(arr1 []int, arr2 []int) []int {
 
 	res, modv := []int{0, 0, 0, 0}, 1000000007
@@ -40,4 +44,8 @@ func FindNthFibonacci(A int) int {
 	arr, modv := []int{1, 1, 1, 0}, 1000000007
 	arr = foo(arr, A-1)
 	return arr[0] % modv
+}
+
+func TestFindNthFibonacci(t *testing.T) {
+
 }

@@ -1,5 +1,7 @@
 package mathProblems
 
+import "testing"
+
 // T(n) : O(log(n)), S(n) : O(1)
 func IsPalindrome(A int) int {
 
@@ -18,4 +20,8 @@ func IsPalindrome(A int) int {
 	}
 
 	return 0
+}
+
+func TestIsPalindrome(t *testing.T) {
+
 }

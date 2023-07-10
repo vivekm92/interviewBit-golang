@@ -1,5 +1,7 @@
 package mathProblems
 
+import "testing"
+
 // T(n) : O(log(n)), S(n) : O(1)
 func TrailingZeroes(A int) int {
 
@@ -10,4 +12,8 @@ func TrailingZeroes(A int) int {
 	}
 
 	return numZeros
+}
+
+func TestTrailingZeroes(t *testing.T) {
+
 }

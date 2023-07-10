@@ -1,5 +1,7 @@
 package mathProblems
 
+import "testing"
+
 // T(n) : O(n), S(n) : O(1)
 func TitleToNumber(A string) int {
 
@@ -10,4 +12,8 @@ func TitleToNumber(A string) int {
 	}
 
 	return res
+}
+
+func TestTitleToNumber(t *testing.T) {
+
 }

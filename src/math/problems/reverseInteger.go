@@ -1,5 +1,7 @@
 package mathProblems
 
+import "testing"
+
 // T(n) : O(log(n)), S(n) : O(1)
 func Reverse(A int) int {
 
@@ -23,4 +25,8 @@ func Reverse(A int) int {
 	}
 
 	return rev
+}
+
+func TestReverse(t *testing.T) {
+
 }

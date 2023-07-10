@@ -1,5 +1,7 @@
 package mathProblems
 
+import "testing"
+
 // T(n) : O(log(n)), S(n) : O(1)
 func Gcd(A int, B int) int {
 
@@ -12,4 +14,8 @@ func Gcd(A int, B int) int {
 	}
 
 	return Gcd(B, A%B)
+}
+
+func TestGcd(t *testing.T) {
+
 }

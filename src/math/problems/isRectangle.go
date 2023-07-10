@@ -1,5 +1,7 @@
 package mathProblems
 
+import "testing"
+
 // T(n) : O(1), S(n) : O(1)
 func IsRectangle(A int, B int, C int, D int) int {
 
@@ -22,4 +24,8 @@ func IsRectangle(A int, B int, C int, D int) int {
 	}
 
 	return 0
+}
+
+func TestIsRectangle(t *testing.T) {
+
 }

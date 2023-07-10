@@ -1,6 +1,9 @@
 package mathProblems
 
-import "strconv"
+import (
+	"strconv"
+	"testing"
+)
 
 // T(n) : O(n), S(n) : O(n)
 func FizzBuzz(A int) []string {
@@ -24,4 +27,8 @@ func FizzBuzz(A int) []string {
 	}
 
 	return res
+}
+
+func TestFizzBuzz(t *testing.T) {
+
 }
