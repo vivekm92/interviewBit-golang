@@ -16,3 +16,6 @@
 
 .vscode
 oryxBuildBinary
+
+# go workspace
+*.work
