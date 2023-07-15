@@ -3,18 +3,20 @@ package arrayMath
 // T(n) : O(n), S(n) : O(1)
 func MinimumLightsToActivate(A []int, B int) int {
 
-	n, curr, res := len(A), 0, 0
+	curr, n, cnt := 0, len(A), 0
 	for curr < n {
-		next, prev := curr+B-1, curr-B+1
+		prev := curr - B + 1
+		nxt := curr + B - 1
+
 		if prev < 0 {
 			prev = 0
 		}
 
-		if next >= n {
-			next = n - 1
+		if nxt >= n {
+			nxt = n - 1
 		}
 
-		idx := next
+		idx := nxt
 		for idx >= prev {
 			if A[idx] == 1 {
 				break
@@ -22,14 +24,13 @@ func MinimumLightsToActivate(A []int, B int) int {
 			idx--
 		}
 
-		if idx >= prev {
-			res++
-			curr = idx + B
-		} else {
+		if idx < prev {
 			return -1
 		}
 
+		cnt++
+		curr = idx + B
 	}
 
-	return res
+	return cnt
 }
