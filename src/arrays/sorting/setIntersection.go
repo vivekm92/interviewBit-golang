@@ -4,6 +4,7 @@ import (
 	"sort"
 )
 
+// T(n): O(nlogn), S(n): O(1)
 func SetIntersection(A [][]int) int {
 
 	sort.Slice(A, func(i, j int) bool {
