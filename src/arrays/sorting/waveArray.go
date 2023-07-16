@@ -28,3 +28,16 @@ func Wave(A []int) []int {
 
 	return res
 }
+
+// T(n) : O(nlogn), S(n) : O(1)
+func WaveArray(A []int) []int {
+
+	sort.Ints(A)
+
+	n := len(A)
+	for i := 0; i < n-1; i += 2 {
+		A[i], A[i+1] = A[i+1], A[i]
+	}
+
+	return A
+}
