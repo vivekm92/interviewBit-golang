@@ -1,5 +1,7 @@
 package bsearch
 
+// n : #rows, k : max(len(__all__rows__))
+// T(n): O(nlogk), S(n): O(1)
 func SearchMatrix(A [][]int, B int) int {
 
 	for _, v := range A {
