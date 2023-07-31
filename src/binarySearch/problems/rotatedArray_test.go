@@ -1,4 +1,4 @@
-package bsearch_test
+package bsearch
 
 import "testing"
 
