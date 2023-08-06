@@ -1,5 +1,6 @@
 package spacerecycle
 
+// T(n) : O(n), S(n): O(n)
 func FirstMissingPositive(A []int) int {
 
 	n := len(A)
