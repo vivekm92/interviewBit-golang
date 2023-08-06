@@ -15,8 +15,8 @@ func SortArrayWithSquares(A []int) []int {
 		}
 	}
 
-	for i, j := 0, len(res)-1; i < j; i, j = i+1, j-1 {
-		res[i], res[j] = res[j], res[i]
+	for i := 0; i < n/2; i++ {
+		res[i], res[n-1-i] = res[n-1-i], res[i]
 	}
 
 	return res
