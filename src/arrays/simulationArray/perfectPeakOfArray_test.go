@@ -1,4 +1,4 @@
-package simulationArray_test
+package simulationArray
 
 import "testing"
 

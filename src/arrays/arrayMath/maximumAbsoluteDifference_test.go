@@ -1,4 +1,4 @@
-package arrayMath_test
+package arrayMath
 
 import "testing"
 

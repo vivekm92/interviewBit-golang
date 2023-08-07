@@ -1,4 +1,4 @@
-package additionalPractice_test
+package additionalPractice
 
 import "testing"
 

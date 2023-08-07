@@ -1,4 +1,4 @@
-package bucketing_test
+package bucketing
 
 import "testing"
 

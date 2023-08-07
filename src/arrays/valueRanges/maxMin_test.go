@@ -1,4 +1,4 @@
-package valueRanges_test
+package valueRanges
 
 import "testing"
 
