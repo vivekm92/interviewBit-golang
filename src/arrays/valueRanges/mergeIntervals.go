@@ -6,7 +6,7 @@ type Interval struct {
 	start, end int
 }
 
-// T(n): O(n), S(n): O(1)
+// T(n): O(n), S(n): O(n)
 func MergeInterval(intervals []Interval, newInterval Interval) []Interval {
 
 	res := make([]Interval, 0)
