@@ -1,4 +1,4 @@
-package spacerecycle
+package missingrepeatednumber
 
 import (
 	"fmt"

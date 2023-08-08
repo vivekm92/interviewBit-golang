@@ -1,4 +1,4 @@
-package spacerecycle
+package missingrepeatednumber
 
 // T(n) : O(n), S(n): O(n)
 func FirstMissingPositive(A []int) int {
