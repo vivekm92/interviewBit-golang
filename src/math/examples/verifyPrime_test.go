@@ -1,4 +1,4 @@
-package mathProblems
+package mathExamples
 
 import (
 	"fmt"

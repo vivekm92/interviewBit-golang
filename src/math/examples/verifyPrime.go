@@ -1,4 +1,4 @@
-package mathProblems
+package mathExamples
 
 // T(n) : O(sqrt(n)), S(n) : O(1)
 func IsPrime(A int) int {

@@ -1,5 +1,6 @@
-package mathProblems
+package mathExamples
 
+// T(n): O(n), S(n) : O(1), where n = log(A)
 func FindDigitsInBinary(A int) string {
 
 	if A == 0 {
