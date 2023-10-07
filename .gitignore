@@ -19,3 +19,6 @@ oryxBuildBinary
 
 # go workspace
 *.work
+
+# debug build
+__debug__*
