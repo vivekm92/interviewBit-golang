@@ -1,6 +1,12 @@
 package twoPointers
 
-import "sort"
+import (
+	"sort"
+)
+
+/*
+problem : https://www.interviewbit.com/problems/pair-with-given-difference/
+*/
 
 // T(n): O(nlogn), S(n) : O(1)
 func PairsWithGivenDifference(A []int, B int) int {

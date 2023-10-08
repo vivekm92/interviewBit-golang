@@ -1,5 +1,9 @@
 package twoPointers
 
+/*
+problem : https://www.interviewbit.com/problems/remove-duplicates-from-sorted-array/
+*/
+
 // T(n) : O(n), S(n) : O(1)
 func RemoveDuplicates(A []int) []int {
 

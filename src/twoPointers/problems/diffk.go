@@ -1,5 +1,10 @@
 package twoPointers
 
+/*
+problem : https://www.interviewbit.com/problems/diffk/
+*/
+
+// T(n) : O(n). S(n) : O(1)
 func DiffPossible(A []int, B int) int {
 
 	n := len(A)
