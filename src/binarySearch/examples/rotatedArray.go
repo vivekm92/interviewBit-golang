@@ -1,7 +1,5 @@
 package bsearch
 
-import "fmt"
-
 /*
 	problem : https://www.interviewbit.com/problems/rotated-array/
 */
@@ -10,7 +8,7 @@ import "fmt"
 func FindMin(A []int) int {
 
 	n := len(A)
-	l, r := 0, n-1
+	l, r := 0, n
 	for l < r {
 		mid := l + (r-l)/2
 		if A[mid] > A[n-1] {
@@ -37,7 +35,6 @@ func FindMin2(A []int) int {
 		}
 	}
 
-	fmt.Println(" value of l ", l)
 	if l == n {
 		l = 0
 	}
