@@ -22,6 +22,7 @@ var rotatedSortedArraySearchTestCases = []rotatedSortedArraySearch{
 	{[]int{0, 1, 2, 3, 4, 5, 6, 7}, 0, 0},
 	{[]int{0, 1, 2, 3, 4, 5, 6, 7}, 7, 7},
 	{[]int{0, 1, 2, 3, 4, 5, 6, 7}, 2, 2},
+	{[]int{6, 0, 1, 2, 3, 4, 5}, 6, 0},
 }
 
 func TestRotatedSearch(t *testing.T) {
