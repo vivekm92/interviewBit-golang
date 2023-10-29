@@ -1,5 +1,54 @@
 package utils
 
+type ListNode struct {
+	Value int
+	Next  *ListNode
+}
+
+func ListNode_new(val int) *ListNode {
+	var node *ListNode = new(ListNode)
+	node.Value = val
+	node.Next = nil
+	return node
+}
+
+// T(n) : O(n), S(n) : O(1)
+func CompareLinkedLists(A *ListNode, B *ListNode) bool {
+
+	if A == nil && B == nil {
+		return true
+	} else if A == nil || B == nil {
+		return false
+	}
+
+	for A != nil && B != nil {
+		if A.Value != B.Value {
+			return false
+		}
+		A = A.Next
+		B = B.Next
+	}
+
+	return A == nil && B == nil
+}
+
+// T(n) : O(n), S(n) : O(n)
+func GenerateLinkedList(A []int) *ListNode {
+
+	n := len(A)
+	if n == 0 {
+		return nil
+	}
+	var head *ListNode = ListNode_new(A[0])
+	var currNode *ListNode = head
+	for i := 1; i < n; i++ {
+		currNode.Next = ListNode_new(A[i])
+		currNode = currNode.Next
+	}
+
+	return head
+}
+
 type LinkedListNode struct {
 	Data interface{}
 	Next *LinkedListNode
