@@ -4,6 +4,10 @@ import (
 	"interviewBit/src/utils"
 )
 
+/*
+	problem : https://www.interviewbit.com/problems/remove-duplicates-from-sorted-list/
+*/
+
 // T(n) : O(n), S(n) : O(1)
 func DeleteDuplicates(A *utils.ListNode) *utils.ListNode {
 
