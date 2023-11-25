@@ -1,10 +1,15 @@
 package mathExamples
 
+/*
+	problem : https://www.interviewbit.com/problems/all-factors/
+*/
+
 import (
 	"math"
 	"sort"
 )
 
+// T(n) : O(sqrt(n)), S(n) : O(n)
 func AllFactors(A int) []int {
 
 	factors := make([]int, 0)

@@ -13,6 +13,7 @@ type allFactorsTestCase struct {
 
 var allFactorsTestCases = []allFactorsTestCase{
 	{6, []int{1, 2, 3, 6}},
+	{11, []int{1, 11}},
 }
 
 func TestAllFactors(t *testing.T) {
