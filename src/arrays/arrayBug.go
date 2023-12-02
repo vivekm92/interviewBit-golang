@@ -1,7 +1,11 @@
 package arrays
 
+/*
+	problem : https://www.interviewbit.com/problems/arraybug/
+*/
+
 // T(n) : O(n), S(n) : O(n)
-func rotateArray(A []int, B int) []int {
+func RotateArray(A []int, B int) []int {
 
 	n := len(A)
 	ret := make([]int, 0)
