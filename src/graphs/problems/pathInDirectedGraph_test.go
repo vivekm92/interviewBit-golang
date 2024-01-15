@@ -27,7 +27,7 @@ func TestPathInDirectedGraph(t *testing.T) {
 
 func TestPathInDirectedGraph1(t *testing.T) {
 	for idx, test := range pathInDirectedGraphTestCases {
-		if output := PathInDirectedGraph(test.A, test.B); output != test.Expected {
+		if output := PathInDirectedGraph1(test.A, test.B); output != test.Expected {
 			fmt.Println(test.A, test.B, test.Expected, output)
 			t.Errorf("Failed %v testCase \nGOT : %v \nEXPECTED : %v\n", idx, output, test.Expected)
 		}
