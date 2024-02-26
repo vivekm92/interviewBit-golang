@@ -1,5 +1,9 @@
 package bsearch
 
+/*
+	Problem : https://www.interviewbit.com/problems/count-element-occurence/
+*/
+
 // T(n) : O(logn), S(n): O(1)
 func FindElementCount(A []int, B int) int {
 

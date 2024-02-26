@@ -1,5 +1,9 @@
 package bsearch
 
+/*
+	Problem : https://www.interviewbit.com/problems/sorted-insert-position/
+*/
+
 // T(n): O(logn), S(n): O(1)
 func SearchInsert(A []int, B int) int {
 

@@ -1,5 +1,9 @@
 package bsearch
 
+/*
+	Problem : https://www.interviewbit.com/problems/square-root-of-integer/
+*/
+
 // T(n): O(logn), S(n): O(1)
 func Sqrt(A int) int {
 

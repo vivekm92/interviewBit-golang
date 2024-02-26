@@ -1,5 +1,9 @@
 package bsearch
 
+/*
+	Problem : https://www.interviewbit.com/problems/woodcutting-made-easy/
+*/
+
 // T(n): O(n)
 func check(A []int, k, th, B int) bool {
 

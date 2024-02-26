@@ -1,5 +1,9 @@
 package bsearch
 
+/*
+	Problem : https://www.interviewbit.com/problems/implement-power-function/
+*/
+
 func solvePow(a int64, b int64, c int64) int64 {
 
 	if b == 0 {

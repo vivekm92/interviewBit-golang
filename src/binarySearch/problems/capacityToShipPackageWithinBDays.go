@@ -1,5 +1,9 @@
 package bsearch
 
+/*
+	Problem : https://www.interviewbit.com/problems/capacity-to-ship-packages-within-b-days/
+*/
+
 func canShipInBDays(A []int, wc, B int) bool {
 
 	n, d, ts := len(A), 1, 0
