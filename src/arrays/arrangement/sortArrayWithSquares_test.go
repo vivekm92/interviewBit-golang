@@ -31,3 +31,13 @@ func TestSortArrayWithSquares(t *testing.T) {
 		}
 	}
 }
+
+func TestSortArrayWithSquares1(t *testing.T) {
+
+	for idx, test := range sortArrayWithSquaresTestCases {
+		if output := SortArrayWithSquares1(test.A); !reflect.DeepEqual(test.Expected, output) {
+			fmt.Println(test.A, test.Expected, output)
+			t.Errorf("Failed %v testCase \nGOT : %v \nEXPECTED : %v\n", idx, output, test.Expected)
+		}
+	}
+}
