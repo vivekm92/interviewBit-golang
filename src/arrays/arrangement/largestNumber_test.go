@@ -1,28 +1,25 @@
 package arrangement
 
 import (
-	"fmt"
+	"reflect"
 	"testing"
 )
 
-type largestNumberTestCase struct {
-	A        []int
-	Expected string
-}
-
-var largestNumberTestCases = []largestNumberTestCase{
-	{
-		[]int{3, 30, 34, 5, 9},
-		"9534330",
-	},
-}
-
 func TestLargestNumber(t *testing.T) {
+	tests := []struct {
+		input  []int
+		output string
+	}{
+		{[]int{2, 10}, "210"},               // Test case 1
+		{[]int{10, 2}, "210"},               // Test case 2
+		{[]int{0, 0, 0, 0}, "0"},            // Test case 3
+		{[]int{3, 30, 34, 5, 9}, "9534330"}, // Test case 4
+	}
 
-	for idx, test := range largestNumberTestCases {
-		if output := LargestNumber(test.A); test.Expected != output {
-			fmt.Println(test.A, test.Expected, output)
-			t.Errorf("Failed %v testCase \nGOT : %v \nEXPECTED : %v\n", idx, output, test.Expected)
+	for _, test := range tests {
+		result := LargestNumber(test.input)
+		if !reflect.DeepEqual(result, test.output) {
+			t.Errorf("LargestNumber(%v) = %v; want %v", test.input, result, test.output)
 		}
 	}
 }
