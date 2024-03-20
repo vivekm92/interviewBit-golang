@@ -1,8 +1,6 @@
 package linkedList
 
-import (
-	"interviewBit/src/utils"
-)
+import "interviewBit/src/utils"
 
 /*
 	problem : https://www.interviewbit.com/problems/sort-binary-linked-list/
@@ -40,4 +38,62 @@ func SortBinaryLinkedList(A *utils.ListNode) *utils.ListNode {
 	}
 
 	return head.Next
+}
+
+// T(n): O(n), S(n) : O(1)
+func SortBinaryLinkedList1(A *utils.ListNode) *utils.ListNode {
+
+	var h *utils.ListNode = A
+	var curr *utils.ListNode = A
+	for curr != nil && curr.Value == 0 {
+		curr = curr.Next
+	}
+
+	if curr == nil {
+		return h
+	}
+
+	var currNext *utils.ListNode = curr.Next
+	for currNext != nil {
+
+		if currNext.Value == 0 {
+			currNext.Value = curr.Value
+			curr.Value = 0
+			curr = curr.Next
+			currNext = currNext.Next
+		}
+
+		for currNext != nil && currNext.Value == 1 {
+			currNext = currNext.Next
+		}
+	}
+
+	return h
+}
+
+// T(n): O(n), S(n) : O(1)
+func SortBinaryLinkedList2(A *utils.ListNode) *utils.ListNode {
+	var h *utils.ListNode = A
+	cnt0, cnt1 := 0, 0
+	for h != nil {
+		if h.Value == 0 {
+			cnt0++
+		} else {
+			cnt1++
+		}
+		h = h.Next
+	}
+
+	h = A
+	for h != nil {
+		if cnt0 > 0 {
+			cnt0--
+			h.Value = 0
+		} else {
+			h.Value = 1
+		}
+		h = h.Next
+	}
+
+	return A
 }

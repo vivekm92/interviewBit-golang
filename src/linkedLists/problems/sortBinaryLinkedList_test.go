@@ -1,7 +1,6 @@
 package linkedList
 
 import (
-	"fmt"
 	"interviewBit/src/utils"
 	"testing"
 )
@@ -29,10 +28,21 @@ func getSortBinaryLinkedListTestCases() []sortBinaryLinkedListTestCase {
 }
 
 func TestSortBinaryLinkedList(t *testing.T) {
-	for idx, test := range getSortBinaryLinkedListTestCases() {
+	for _, test := range getSortBinaryLinkedListTestCases() {
 		if output := SortBinaryLinkedList(test.A); !utils.CompareLinkedLists(output, test.Expected) {
-			fmt.Println(test.A.Value, test.Expected.Value, output.Value)
-			t.Errorf("Failed %v testCase \nGOT : %v \nEXPECTED : %v\n", idx, output.Value, test.Expected.Value)
+			t.Errorf("SortBinaryLinkedList(%v) = %v; want %v", test.A.String(), output.String(), test.Expected.String())
+		}
+	}
+
+	for _, test := range getSortBinaryLinkedListTestCases() {
+		if output := SortBinaryLinkedList1(test.A); !utils.CompareLinkedLists(output, test.Expected) {
+			t.Errorf("SortBinaryLinkedList1(%v) = %v; want %v", test.A.String(), output.String(), test.Expected.String())
+		}
+	}
+
+	for _, test := range getSortBinaryLinkedListTestCases() {
+		if output := SortBinaryLinkedList2(test.A); !utils.CompareLinkedLists(output, test.Expected) {
+			t.Errorf("SortBinaryLinkedList1(%v) = %v; want %v", test.A.String(), output.String(), test.Expected.String())
 		}
 	}
 }

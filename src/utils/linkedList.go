@@ -1,8 +1,33 @@
 package utils
 
+import (
+	"fmt"
+)
+
 type ListNode struct {
 	Value int
 	Next  *ListNode
+}
+
+type IListNode interface {
+	String() string
+}
+
+func (l *ListNode) String() string {
+	var t *ListNode = l
+
+	var res string
+	for t != nil {
+		if t.Next != nil {
+			res += fmt.Sprintf("%v -> ", t.Value)
+		} else {
+			res += fmt.Sprintf("%v", t.Value)
+		}
+
+		t = t.Next
+	}
+
+	return res
 }
 
 func ListNode_new(val int) *ListNode {
