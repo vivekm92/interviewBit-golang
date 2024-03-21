@@ -20,14 +20,10 @@ func (l *ListNode) String() string {
 
 	var res string
 	for t != nil {
-		if t.Next != nil {
-			res += fmt.Sprintf("%v -> ", t.Value)
-		} else {
-			res += fmt.Sprintf("%v", t.Value)
-		}
-
+		res += fmt.Sprintf("%v -> ", t.Value)
 		t = t.Next
 	}
+	res += "nil"
 
 	return res
 }
