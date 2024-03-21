@@ -86,6 +86,26 @@ func GenerateLinkedList(A []int) *ListNode {
 	return head
 }
 
+func MergeLinkedList(A *ListNode, B *ListNode, posA int, posB int) (*ListNode, *ListNode) {
+
+	var tA, tB *ListNode = A, B
+	for posA > 0 && tA != nil {
+		posA--
+		tA = tA.Next
+	}
+
+	for posB > 0 && tB != nil {
+		posB--
+		tB = tB.Next
+	}
+
+	if tA != nil {
+		tA.Next = tB
+	}
+
+	return A, B
+}
+
 type LinkedListNode struct {
 	Data interface{}
 	Next *LinkedListNode
