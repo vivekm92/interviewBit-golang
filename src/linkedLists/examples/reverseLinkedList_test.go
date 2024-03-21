@@ -21,7 +21,16 @@ func TestReverseList(t *testing.T) {
 		inputCompare := test.input.Copy()
 		result := ReverseList(input)
 		if !utils.CompareLinkedLists(result, test.output) {
-			t.Errorf("SortBinaryLinkedList(%v) = %v; want %v", inputCompare.String(), result.String(), test.output.String())
+			t.Errorf("ReverseList(%v) = %v; want %v", inputCompare.String(), result.String(), test.output.String())
+		}
+	}
+
+	for _, test := range tests {
+		input := test.input.Copy()
+		inputCompare := test.input.Copy()
+		result := ReverseList1(input)
+		if !utils.CompareLinkedLists(result, test.output) {
+			t.Errorf("ReverseList1(%v) = %v; want %v", inputCompare.String(), result.String(), test.output.String())
 		}
 	}
 }
