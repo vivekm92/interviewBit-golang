@@ -11,8 +11,10 @@ type ListNode struct {
 
 type IListNode interface {
 	String() string
+	Copy() *ListNode
 }
 
+// Convert to string
 func (l *ListNode) String() string {
 	var t *ListNode = l
 
@@ -28,6 +30,20 @@ func (l *ListNode) String() string {
 	}
 
 	return res
+}
+
+// Returns new List with same values
+func (l *ListNode) Copy() *ListNode {
+	var dh *ListNode = ListNode_new(-1)
+	var h *ListNode = dh
+	var curr *ListNode = l
+	for curr != nil {
+		dh.Next = ListNode_new(curr.Value)
+		dh = dh.Next
+		curr = curr.Next
+	}
+
+	return h.Next
 }
 
 func ListNode_new(val int) *ListNode {
