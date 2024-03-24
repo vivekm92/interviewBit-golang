@@ -4,6 +4,10 @@ import (
 	"interviewBit/src/utils"
 )
 
+/*
+	Problem : https://www.interviewbit.com/problems/reverse-alternate-k-nodes/
+*/
+
 // T(n) : O(n), S(n) : O(1)
 func ReverseAlternate(A *utils.ListNode, B int) *utils.ListNode {
 

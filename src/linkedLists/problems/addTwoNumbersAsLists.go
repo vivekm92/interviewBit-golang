@@ -5,7 +5,7 @@ import (
 )
 
 /*
-	problem : https://www.interviewbit.com/problems/add-two-numbers-as-lists/
+	Problem : https://www.interviewbit.com/problems/add-two-numbers-as-lists/
 */
 
 // T(n) : O(n), S(n) : O(n)

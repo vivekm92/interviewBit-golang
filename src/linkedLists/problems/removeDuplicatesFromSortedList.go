@@ -5,7 +5,7 @@ import (
 )
 
 /*
-	problem : https://www.interviewbit.com/problems/remove-duplicates-from-sorted-list/
+	Problem : https://www.interviewbit.com/problems/remove-duplicates-from-sorted-list/
 */
 
 // T(n) : O(n), S(n) : O(1)

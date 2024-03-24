@@ -5,7 +5,7 @@ import (
 )
 
 /*
-	problem : https://www.interviewbit.com/problems/rotate-list/
+	Problem : https://www.interviewbit.com/problems/rotate-list/
 */
 
 // T(n) : O(n), S(n) : O(1)

@@ -5,7 +5,7 @@ import (
 )
 
 /*
-	problem : https://www.interviewbit.com/problems/kth-node-from-middle/
+	Problem : https://www.interviewbit.com/problems/kth-node-from-middle/
 */
 
 // T(n) : O(n), S(n) : O(1)

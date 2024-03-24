@@ -3,7 +3,7 @@ package linkedList
 import "interviewBit/src/utils"
 
 /*
-	problem : https://www.interviewbit.com/problems/sort-binary-linked-list/
+	Problem : https://www.interviewbit.com/problems/sort-binary-linked-list/
 */
 
 // T(n) : O(n), S(n), O(n)

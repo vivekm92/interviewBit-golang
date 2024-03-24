@@ -5,7 +5,7 @@ import (
 )
 
 /*
-Problem : https://www.interviewbit.com/problems/merge-two-sorted-lists/
+	Problem : https://www.interviewbit.com/problems/merge-two-sorted-lists/
 */
 
 // T(n) : O(n), S(n) : O(1)
