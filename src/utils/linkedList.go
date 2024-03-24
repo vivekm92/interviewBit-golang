@@ -33,10 +33,15 @@ func (l *ListNode) Copy() *ListNode {
 	var dh *ListNode = ListNode_new(-1)
 	var h *ListNode = dh
 	var curr *ListNode = l
-	for curr != nil {
+	visited := make(map[*ListNode]bool)
+	for curr != nil && !visited[curr] {
+		visited[curr] = true
 		dh.Next = ListNode_new(curr.Value)
 		dh = dh.Next
 		curr = curr.Next
+	}
+	if curr != nil {
+		dh.Next = curr
 	}
 
 	return h.Next
@@ -58,10 +63,15 @@ func CompareLinkedLists(A *ListNode, B *ListNode) bool {
 		return false
 	}
 
+	lA, lB := make(map[*ListNode]bool), make(map[*ListNode]bool)
 	for A != nil && B != nil {
+		if lA[A] && lB[B] {
+			return true
+		}
 		if A.Value != B.Value {
 			return false
 		}
+		lA[A], lB[B] = true, true
 		A = A.Next
 		B = B.Next
 	}
@@ -104,6 +114,29 @@ func MergeLinkedList(A *ListNode, B *ListNode, posA int, posB int) (*ListNode, *
 	}
 
 	return A, B
+}
+
+func GenerateLinkedListWithCycle(A []int, B int) *ListNode {
+
+	ll := GenerateLinkedList(A)
+	if B == -1 {
+		return ll
+	}
+
+	cntIdx := 0
+	var t, prev, curr *ListNode = nil, nil, ll
+	for curr != nil {
+		if cntIdx == B {
+			t = curr
+		}
+		cntIdx++
+		prev = curr
+		curr = curr.Next
+	}
+
+	prev.Next = t
+
+	return ll
 }
 
 type LinkedListNode struct {
