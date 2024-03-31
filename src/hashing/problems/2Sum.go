@@ -1,7 +1,7 @@
 package hashing
 
 /*
-	problem : https://www.interviewbit.com/problems/2-sum/
+	Problem : https://www.interviewbit.com/problems/2-sum/
 */
 
 // T(n) : O(n), S(n) : O(n)
@@ -14,7 +14,7 @@ func TwoSum(A []int, B int) []int {
 		} else if _, found := lookup[A[i]]; !found {
 			lookup[A[i]] = i
 		}
-	}	
+	}
 
 	return []int{}
 }
