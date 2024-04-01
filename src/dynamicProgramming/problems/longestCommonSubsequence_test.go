@@ -1,27 +1,25 @@
 package dpProblems
 
 import (
-	"fmt"
 	"testing"
 )
 
-type lcsLengthTestCase struct {
-	A        string
-	B        string
-	Expected int
-}
-
-var lcsLengthTestCases = []lcsLengthTestCase{
-	{"ABCBDAB", "BDCABA", 4},
-	{"ABCDEF", "ABCDEFGHI", 6},
-	{"AAAAA", "AAAA", 4},
-}
-
 func TestLCSLength(t *testing.T) {
-	for idx, test := range lcsLengthTestCases {
-		if output := LCSLength(test.A, test.B); output != test.Expected {
-			fmt.Println(test.A, test.B, test.Expected, output)
-			t.Errorf("Failed %v testCase \nGOT : %v \nEXPECTED : %v\n", idx, output, test.Expected)
+
+	tests := []struct {
+		input1 string
+		input2 string
+		output int
+	}{
+		{"ABCBDAB", "BDCABA", 4},
+		{"ABCDEF", "ABCDEFGHI", 6},
+		{"AAAAA", "AAAA", 4},
+	}
+
+	for _, test := range tests {
+		result := LCSLength(test.input1, test.input2)
+		if result != test.output {
+			t.Errorf("LCSLength(%v, %v) = %v ; want %v", test.input1, test.input2, result, test.output)
 		}
 	}
 }

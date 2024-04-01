@@ -1,9 +1,10 @@
 package dpProblems
 
 /*
-problem : https://www.interviewbit.com/problems/longest-common-subsequence/
+	Problem : https://www.interviewbit.com/problems/longest-common-subsequence/
 */
 
+// Approach : Iterative DP
 // T(n) : O(n*m), S(n) : O(n*m)
 func LCSLength(A string, B string) int {
 
