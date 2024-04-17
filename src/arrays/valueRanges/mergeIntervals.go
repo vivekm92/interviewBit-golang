@@ -23,7 +23,7 @@ func MergeInterval(intervals []Interval, newInterval Interval) []Interval {
 			res = append(res, t)        // push_back
 		} else {
 			res = res[:k-1] //pop_back
-			s = utils.MinOfIntsOrFloat[int](s, interval.start)
+			s = utils.MinOfIntsOrFloats[int](s, interval.start)
 			e = utils.MaxOfIntsOrFloats[int](e, interval.end)
 
 			i := new(Interval)

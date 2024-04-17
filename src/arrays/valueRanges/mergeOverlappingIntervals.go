@@ -26,7 +26,7 @@ func MergeOverlappingIntervals(A []Interval) []Interval {
 		if A[i].start > e {
 			res = append(res, A[i])
 		} else {
-			s = utils.MinOfIntsOrFloat[int](s, A[i].start)
+			s = utils.MinOfIntsOrFloats[int](s, A[i].start)
 			e = utils.MaxOfIntsOrFloats[int](e, A[i].end)
 
 			res[k].start = s

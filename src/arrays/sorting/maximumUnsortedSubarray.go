@@ -27,7 +27,7 @@ func SubUnsort(A []int) []int {
 	mini, maxi := A[idx1], A[idx1]
 	for i := idx1; i <= idx2; i++ {
 		maxi = utils.MaxOfIntsOrFloats[int](maxi, A[i])
-		mini = utils.MinOfIntsOrFloat[int](mini, A[i])
+		mini = utils.MinOfIntsOrFloats[int](mini, A[i])
 	}
 
 	for i := 0; i < idx1; i++ {

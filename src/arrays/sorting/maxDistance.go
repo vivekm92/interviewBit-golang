@@ -33,7 +33,7 @@ func MaxDistance(A []int) int {
 	ix := distancePairs[0].idx
 	for i := 1; i < n; i++ {
 		curr := distancePairs[i].idx - ix
-		ix = utils.MinOfIntsOrFloat(ix, distancePairs[i].idx)
+		ix = utils.MinOfIntsOrFloats(ix, distancePairs[i].idx)
 		maxDistance = utils.MaxOfIntsOrFloats(maxDistance, curr)
 	}
 
