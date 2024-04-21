@@ -1,4 +1,4 @@
-package missingrepeatednumber
+package arrayProblems
 
 /*
 	Problem : https://www.interviewbit.com/problems/n3-repeat-number/

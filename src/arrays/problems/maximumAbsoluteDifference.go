@@ -1,4 +1,4 @@
-package arrayMath
+package arrayProblems
 
 // T(n): O(n), S(n) : O(1)
 func MaxArr(A []int) int {

@@ -1,4 +1,4 @@
-package valueRanges
+package arrayProblems
 
 import (
 	"fmt"

@@ -1,4 +1,4 @@
-package arrangement
+package arrayProblems
 
 import (
 	"fmt"

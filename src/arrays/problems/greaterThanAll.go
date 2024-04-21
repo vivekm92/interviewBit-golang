@@ -1,4 +1,4 @@
-package additionalPractice
+package arrayProblems
 
 import (
 	"interviewBit/src/utils"

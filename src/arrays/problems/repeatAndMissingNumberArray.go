@@ -1,6 +1,6 @@
-package missingrepeatednumber
+package arrayProblems
 
-func RepeatedNumber(A []int) []int {
+func RepeatAndMissingNumber(A []int) []int {
 
 	n := uint64(len(A))
 	s_n := (n * (n + 1)) / 2

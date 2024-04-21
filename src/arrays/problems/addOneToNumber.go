@@ -1,4 +1,4 @@
-package arrayMath
+package arrayProblems
 
 // T(n) : O (n), S(n) : O(n)
 func PlusOne(A []int) []int {

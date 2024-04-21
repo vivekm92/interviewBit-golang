@@ -1,4 +1,4 @@
-package additionalPractice
+package arrayProblems
 
 // T(n) : O(n), S(n) : O(n)
 func MakeEqualElements(A []int, B int) int {

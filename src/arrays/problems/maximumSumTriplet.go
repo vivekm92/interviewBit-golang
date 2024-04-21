@@ -1,4 +1,4 @@
-package arrayMath
+package arrayProblems
 
 import "interviewBit/src/utils"
 

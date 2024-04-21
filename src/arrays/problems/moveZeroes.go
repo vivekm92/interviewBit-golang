@@ -1,4 +1,4 @@
-package additionalPractice
+package arrayProblems
 
 // T(n) : O(n), S(n) : O(1)
 func MoveZeroes(A []int) []int {

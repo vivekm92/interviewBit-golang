@@ -1,4 +1,4 @@
-package arrayMath
+package arrayProblems
 
 // T(n) : O(n), S(n) : O(n)
 func CountPartitions(A int, B []int) int {

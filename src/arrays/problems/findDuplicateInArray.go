@@ -1,4 +1,4 @@
-package bucketing
+package arrayProblems
 
 func RepeatedNumber(A []int) int {
 

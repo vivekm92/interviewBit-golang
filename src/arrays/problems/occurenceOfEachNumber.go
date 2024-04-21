@@ -1,4 +1,4 @@
-package hashSearch
+package arrayProblems
 
 import (
 	"sort"

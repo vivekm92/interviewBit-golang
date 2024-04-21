@@ -1,4 +1,4 @@
-package simulationArray
+package arrayProblems
 
 /*
 	Problem : https://www.interviewbit.com/problems/pascal-triangle/

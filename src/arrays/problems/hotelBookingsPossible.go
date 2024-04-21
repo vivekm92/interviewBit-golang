@@ -1,4 +1,4 @@
-package sorting
+package arrayProblems
 
 import (
 	"sort"
@@ -33,7 +33,7 @@ func HotelBookings(A []int, B []int, C int) bool {
 		}
 
 		return ps[i].t < ps[j].t
- 	})
+	})
 
 	k := 0
 	for _, v := range ps {

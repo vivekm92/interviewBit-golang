@@ -1,4 +1,4 @@
-package arrayMath
+package arrayProblems
 
 /*
 	problem : https://www.interviewbit.com/problems/flip/

@@ -1,4 +1,4 @@
-package simulationArray
+package arrayProblems
 
 // T(n) : O(n), S(n) : O(n)
 func PerfectPeak(A []int) int {

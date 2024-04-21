@@ -1,4 +1,4 @@
-package additionalPractice
+package arrayProblems
 
 /*
   Problem : https://www.interviewbit.com/problems/array-sum/

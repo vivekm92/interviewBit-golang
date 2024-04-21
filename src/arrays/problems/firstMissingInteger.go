@@ -1,4 +1,4 @@
-package spacerecycle
+package arrayProblems
 
 // T(n) : O(n), S(n): O(n)
 func FirstMissingPositive(A []int) int {

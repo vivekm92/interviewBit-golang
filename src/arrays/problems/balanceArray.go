@@ -1,4 +1,4 @@
-package bucketing
+package arrayProblems
 
 // T(n) : O(n), S(n) : O(n)
 func BalanceArray(A []int) int {

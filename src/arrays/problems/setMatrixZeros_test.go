@@ -1,4 +1,4 @@
-package spacerecycle
+package arrayProblems
 
 import (
 	"fmt"

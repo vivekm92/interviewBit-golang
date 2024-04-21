@@ -1,4 +1,4 @@
-package additionalPractice
+package arrayProblems
 
 /*
 	problem : https://www.interviewbit.com/problems/climbing-stairs/

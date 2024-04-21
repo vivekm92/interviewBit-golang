@@ -1,4 +1,4 @@
-package simulationArray
+package arrayProblems
 
 /*
 	problem : https://www.interviewbit.com/problems/anti-diagonals/

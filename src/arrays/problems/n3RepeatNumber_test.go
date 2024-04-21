@@ -1,4 +1,4 @@
-package missingrepeatednumber
+package arrayProblems
 
 import "testing"
 

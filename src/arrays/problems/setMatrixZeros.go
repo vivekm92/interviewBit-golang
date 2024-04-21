@@ -1,4 +1,4 @@
-package spacerecycle
+package arrayProblems
 
 // T(n): O(n^2), S(n): O(1)
 func SetZeros(A [][]int) [][]int {
