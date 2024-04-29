@@ -1,4 +1,4 @@
-package stacksAndQueues
+package stacksAndQueuesExamples
 
 import (
 	"testing"

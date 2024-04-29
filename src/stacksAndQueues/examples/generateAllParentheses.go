@@ -1,4 +1,4 @@
-package stacksAndQueues
+package stacksAndQueuesExamples
 
 /*
 	Problem : https://www.interviewbit.com/problems/generate-all-parentheses/
