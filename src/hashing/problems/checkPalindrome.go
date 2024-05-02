@@ -1,4 +1,4 @@
-package stringProblems
+package hashing
 
 /*
 	Problem : https://www.interviewbit.com/problems/check-palindrome/

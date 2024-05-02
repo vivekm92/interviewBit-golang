@@ -1,4 +1,4 @@
-package stringProblems
+package hashing
 
 import (
 	"testing"
