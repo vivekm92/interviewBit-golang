@@ -10,7 +10,8 @@ func TestRoundTable(t *testing.T) {
 		Expected int
 	}{
 		{1, 2},
-		{2, 4},
+		{2, 2},
+		{4, 12},
 	}
 
 	for _, test := range tests {
