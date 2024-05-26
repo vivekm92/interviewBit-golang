@@ -33,7 +33,7 @@ func IntegerToRoman(A int) string {
 			res += "C"
 			A -= 100
 		} else if A >= 50 {
-			res += "M"
+			res += "L"
 			A -= 50
 		} else if A >= 10 {
 			res += "X"

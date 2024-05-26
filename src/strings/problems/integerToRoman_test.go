@@ -10,6 +10,7 @@ func TestIntegerToRoman(t *testing.T) {
 		{14, "XIV"},
 		{16, "XVI"},
 		{41, "XLI"},
+		{50, "L"},
 	}
 
 	for _, test := range tests {
