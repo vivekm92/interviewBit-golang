@@ -1,7 +1,6 @@
 package twoPointers
 
 import (
-	"fmt"
 	"sort"
 )
 
@@ -16,7 +15,6 @@ func CountingTriangles(A []int) int {
 		return A[i] < A[j]
 	})
 
-	fmt.Println(A)
 	const MOD = 1000000007
 	count, n := 0, len(A)
 	for i := 0; i < n; i++ {
