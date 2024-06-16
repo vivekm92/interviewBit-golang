@@ -1,4 +1,4 @@
-package backtracking
+package backtrackingExamples
 
 func solveMod(A, B, C int) int {
 	if B == 0 {

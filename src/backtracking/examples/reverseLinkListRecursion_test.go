@@ -1,4 +1,4 @@
-package backtracking
+package backtrackingExamples
 
 import (
 	"interviewBit/src/utils"
