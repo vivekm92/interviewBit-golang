@@ -11,7 +11,7 @@ package arrayProblems
 */
 
 // T(n) : O(n) , S(n) : O(1)
-func PickFromBothSides(A []int, B int) int {
+func pickFromBothSides(A []int, B int) int {
 
 	n, t := len(A), 0
 	for i := 0; i < B; i++ {

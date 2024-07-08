@@ -19,7 +19,7 @@ func TestPickFromBothSides(t *testing.T) {
 	}
 
 	for idx, test := range tests {
-		result := PickFromBothSides(test.A, test.B)
+		result := pickFromBothSides(test.A, test.B)
 		if result != test.Expected {
 			fmt.Println(test.A, test.B, test.Expected, result)
 			t.Errorf("Failed %v testCase \nGOT : %v \nEXPECTED : %v\n", idx, result, test.Expected)
