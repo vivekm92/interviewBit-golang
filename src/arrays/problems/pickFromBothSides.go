@@ -1,7 +1,5 @@
 package arrayProblems
 
-import "math"
-
 /*
   Problem : https://www.interviewbit.com/problems/pick-from-both-sides/
   Similar Problem : https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/
@@ -12,18 +10,20 @@ import "math"
 
 */
 
-// T(n) : O(n), S(n) : O(1)
+// T(n) : O(n) , S(n) : O(1)
 func PickFromBothSides(A []int, B int) int {
 
-	res := 0
+	n, t := len(A), 0
 	for i := 0; i < B; i++ {
-		res += A[i]
+		t += A[i]
 	}
 
-	curr, n := res, len(A)
+	res := t
 	for i := 0; i < B; i++ {
-		curr = curr - A[B-1-i] + A[n-1-i]
-		res = int(math.Max(float64(res), float64(curr)))
+		t += A[n-1-i] - A[B-1-i]
+		if t > res {
+			res = t
+		}
 	}
 
 	return res
