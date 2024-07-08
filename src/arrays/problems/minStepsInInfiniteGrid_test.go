@@ -5,26 +5,22 @@ import (
 	"testing"
 )
 
-type coverPointsTestCase struct {
-	A        []int
-	B        []int
-	Expected int
-}
+func TestMinStepsInInfiniteGrid(t *testing.T) {
 
-var coverPointsTestCases = []coverPointsTestCase{
-	{
-		[]int{0, 1, 1},
-		[]int{0, 1, 2},
-		2,
-	},
-}
+	tests := []struct {
+		A        []int
+		B        []int
+		Expected int
+	}{
+		{[]int{0, 1, 1}, []int{0, 1, 2}, 2},
+		{[]int{1, -2, 4}, []int{0, -2, 5}, 10},
+	}
 
-func TestCoverPoints(t *testing.T) {
-
-	for idx, test := range coverPointsTestCases {
-		if output := CoverPoints(test.A, test.B); output != test.Expected {
-			fmt.Println(test.A, test.B, test.Expected, output)
-			t.Errorf("Failed %v testCase \nGOT : %v \nEXPECTED : %v\n", idx, output, test.Expected)
+	for idx, test := range tests {
+		result := minStepsInInfiniteGrid(test.A, test.B)
+		if result != test.Expected {
+			fmt.Println(test.A, test.B, test.Expected, result)
+			t.Errorf("Failed %v testCase \nGOT : %v \nEXPECTED : %v\n", idx, result, test.Expected)
 		}
 	}
 }

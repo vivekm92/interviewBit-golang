@@ -1,7 +1,5 @@
 package arrayProblems
 
-import "math"
-
 /*
   Problem : https://www.interviewbit.com/problems/min-steps-in-infinite-grid/
 
@@ -11,16 +9,25 @@ import "math"
 	- minimum steps to move from (x,y) --> (a,b) would be max(abs(a-x), abs(b-y))
 */
 
-// T(n) : O(n), S(n) : O(1)
-func CoverPoints(A []int, B []int) int {
+// T(n) : O(n) , S(n) : O(1)
+func minStepsInInfiniteGrid(A []int, B []int) int {
 
-	res := 0
-	for i := 1; i < len(A); i++ {
-		xDiff := A[i] - A[i-1]
-		yDiff := B[i] - B[i-1]
-
-		res += int(math.Max(math.Abs(float64(xDiff)), math.Abs(float64(yDiff))))
+	n, res := len(A), 0
+	for i := 0; i < n-1; i++ {
+		x, y := abs(A[i]-A[i+1]), abs(B[i]-B[i+1])
+		if x > y {
+			res += x
+		} else {
+			res += y
+		}
 	}
 
 	return res
+}
+
+func abs(A int) int {
+	if A < 0 {
+		return -1 * A
+	}
+	return A
 }
