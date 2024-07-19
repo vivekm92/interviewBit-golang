@@ -22,3 +22,21 @@ func Rotate(A [][]int) [][]int {
 
 	return A
 }
+
+// T(n) : O(n2) ; S(n) : O(n2)
+func RotateMatrix(A [][]int) [][]int {
+
+	n := len(A)
+	res := make([][]int, n)
+	for i := range res {
+		res[i] = make([]int, n)
+	}
+
+	for i := 0; i < n; i++ {
+		for j := 0; j < n; j++ {
+			res[j][n-i-1] = A[i][j]
+		}
+	}
+
+	return res
+}
