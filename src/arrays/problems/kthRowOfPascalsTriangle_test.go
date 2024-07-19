@@ -23,4 +23,18 @@ func TestKthRowOfPascalTriangle(t *testing.T) {
 			t.Errorf("KthRowOfPascalTriangle(%v) = %v ; want %v", test.input, result, test.output)
 		}
 	}
+
+	for _, test := range tests {
+		result := kthRowOfPascalsTriangleRecursive(test.input)
+		if !reflect.DeepEqual(result, test.output) {
+			t.Errorf("kthRowOfPascalsTriangleRecursive(%v) = %v ; want %v", test.input, result, test.output)
+		}
+	}
+
+	for _, test := range tests {
+		result := kthRowOfPascalsTriangleIterative(test.input)
+		if !reflect.DeepEqual(result, test.output) {
+			t.Errorf("kthRowOfPascalsTriangleIterative(%v) = %v ; want %v", test.input, result, test.output)
+		}
+	}
 }
