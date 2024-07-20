@@ -15,6 +15,7 @@ func TestKthRowOfPascalTriangle(t *testing.T) {
 		{2, []int{1, 2, 1}},
 		{3, []int{1, 3, 3, 1}},
 		{4, []int{1, 4, 6, 4, 1}},
+		{13, []int{1, 13, 78, 286, 715, 1287, 1716, 1716, 1287, 715, 286, 78, 13, 1}},
 	}
 
 	for _, test := range tests {
