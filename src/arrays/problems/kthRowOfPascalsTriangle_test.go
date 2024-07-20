@@ -37,4 +37,11 @@ func TestKthRowOfPascalTriangle(t *testing.T) {
 			t.Errorf("kthRowOfPascalsTriangleIterative(%v) = %v ; want %v", test.input, result, test.output)
 		}
 	}
+
+	for _, test := range tests {
+		result := kthRowOfPascalsTriangle1(test.input)
+		if !reflect.DeepEqual(result, test.output) {
+			t.Errorf("kthRowOfPascalsTriangle1(%v) = %v ; want %v", test.input, result, test.output)
+		}
+	}
 }

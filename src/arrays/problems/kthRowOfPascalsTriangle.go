@@ -61,3 +61,17 @@ func kthRowOfPascalsTriangleIterative(A int) []int {
 
 	return res
 }
+
+// T(n) : O(n) ; S(n) : O(n)
+func kthRowOfPascalsTriangle1(A int) []int {
+
+	n := A
+	row := make([]int, n+1)
+	row[0], row[n] = 1, 1
+	for i := 0; i < int(n/2); i++ {
+		x := row[i] * (n - i) / (i + 1)
+		row[i+1], row[n-i-1] = x, x
+	}
+
+	return row
+}
