@@ -17,6 +17,20 @@ func TestKnapSack(t *testing.T) {
 	}
 
 	for _, test := range tests {
+		result := KnapSackRecursive(test.A, test.B, test.C)
+		if result != test.Expected {
+			t.Errorf("KnapSack(%v, %v, %v) = %v ; want %v", test.A, test.B, test.C, result, test.Expected)
+		}
+	}
+
+	for _, test := range tests {
+		result := KnapSackRecursiveNaive(test.A, test.B, test.C)
+		if result != test.Expected {
+			t.Errorf("KnapSackRecursiveNaive(%v, %v, %v) = %v ; want %v", test.A, test.B, test.C, result, test.Expected)
+		}
+	}
+
+	for _, test := range tests {
 		result := KnapSack(test.A, test.B, test.C)
 		if result != test.Expected {
 			t.Errorf("KnapSack(%v, %v, %v) = %v ; want %v", test.A, test.B, test.C, result, test.Expected)
