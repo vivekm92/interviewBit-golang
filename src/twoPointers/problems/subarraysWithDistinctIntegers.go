@@ -1,7 +1,5 @@
 package twoPointers
 
-import "fmt"
-
 /*
 	Problem : https://www.interviewbit.com/problems/subarrays-with-distinct-integers/
 */
@@ -34,7 +32,6 @@ func solveSubarraysWithDistinctIntegers(A []int, B int) int {
 func SubarraysWithDistinctIntegers(A []int, B int) int {
 	v1 := solveSubarraysWithDistinctIntegers(A, B)
 	v2 := solveSubarraysWithDistinctIntegers(A, B-1)
-	fmt.Println(v1, v2)
 
 	return v1 - v2
 }
