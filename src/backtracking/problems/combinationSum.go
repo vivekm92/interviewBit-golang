@@ -9,7 +9,9 @@ import "sort"
 func solveCombinationSum(A []int, B int, C []int, D *[][]int, i int) {
 
 	if B == 0 {
-		*D = append(*D, C)
+		E := make([]int, len(C))
+		copy(E, C)
+		*D = append(*D, E)
 		return
 	}
 
