@@ -26,4 +26,11 @@ func TestPairsWithGivenXor(t *testing.T) {
 			t.Errorf("PairsWithGivenXorBruteForce(%v, %v) = %v ; want %v", test.A, test.B, result, test.Expected)
 		}
 	}
+
+	for _, test := range tests {
+		result := PairsWithGivenXorOptimised(test.A, test.B)
+		if result != test.Expected {
+			t.Errorf("PairsWithGivenXorOptimised(%v, %v) = %v ; want %v", test.A, test.B, result, test.Expected)
+		}
+	}
 }
